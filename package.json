@@ -13,7 +13,8 @@
   "dependencies": {
     "next": "^5.0.1-canary",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "validator": "^9.4.0"
   },
   "devDependencies": {
     "flow-bin": "^0.65.0",

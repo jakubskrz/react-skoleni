@@ -1,9 +1,10 @@
 // @flow
 import * as React from 'react';
 
-type TextProps = {
+type TextProps = {|
   children: string,
-};
+  color?: 'primary' | 'error',
+|};
 
 class Text extends React.PureComponent<TextProps> {
   render() {
@@ -19,6 +20,11 @@ class Text extends React.PureComponent<TextProps> {
                 'Segoe UI Emoji', 'Segoe UI Symbol';
             }
           `}
+        </style>
+        <style jsx>
+          {`
+          span {color: ${this.props.color === 'error' ? 'red' : '#333'}}
+        `}
         </style>
         {this.props.children}
       </span>
